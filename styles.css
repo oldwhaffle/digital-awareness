@@ -1271,16 +1271,3 @@ margin-top:20px;
 font-size:12px;
 opacity:.6;
 }
-
-.video-link video{
-  width: 80%;
-  max-width: 800px;
-  display: block;
-  margin: 20px auto;
-  cursor: pointer;
-}
-
-.video-link:hover video{
-  transform: scale(1.03);
-  opacity: 0.9;
-}
