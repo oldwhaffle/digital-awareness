@@ -1271,3 +1271,18 @@ margin-top:20px;
 font-size:12px;
 opacity:.6;
 }
+
+.hero-buttons button{
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;        /* increase text size */
+  padding: 12px 28px;     /* makes button bigger */
+  background: #ff2c55;
+  color: white;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.hero-buttons button:hover{
+  opacity: 0.9;
+}
