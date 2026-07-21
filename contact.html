@@ -109,3 +109,26 @@
 
 </body>
 </html>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("submitted") === "true") {
+
+  const form = document.querySelector(".contact-form");
+
+  if (form) {
+    form.innerHTML = `
+      <div class="success-message">
+        <h2>Thanks for reaching out!</h2>
+        <p>
+          We've received your inquiry and will get back to you as soon as we can.
+        </p>
+      </div>
+    `;
+  }
+
+  // Remove ?submitted=true from the URL
+  window.history.replaceState({}, document.title, window.location.pathname);
+}
+</script>
