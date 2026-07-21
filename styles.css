@@ -1286,3 +1286,15 @@ opacity:.6;
 .hero-buttons button:hover{
   opacity: 0.9;
 }
+
+.testimonials{
+    max-width:900px;
+    margin:90px auto;
+}
+
+.testimonials p{
+    margin:25px 0;
+    font-size:18px;
+    line-height:1.5;
+    opacity:.9;
+}
