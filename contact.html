@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contact — Digital Awareness</title>
+
 <link rel="stylesheet" href="styles.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
 <header class="header">
   <a href="index.html">
-    <img src="assets/logo/logo-white.png" class="logo">
+    <img src="assets/logo/logo-white.png" class="logo" alt="Digital Awareness Logo">
   </a>
 
   <nav class="nav">
@@ -26,51 +27,83 @@
     -->
     <a href="contact.html" class="active">CONTACT</a>
   </nav>
-
 </header>
-
 
 <section class="contact-minimal">
 
   <h1>BECOME DIGITALLY AWARE</h1>
 
- <p class="contact-hook">
+  <p class="contact-hook">
     Email us:
-</p>
+  </p>
 
-<a class="contact-email" href="mailto:digitalawareness4u@gmail.com">
-    digitalawareness4u at gmail.com
-</a>
-
-<p class="contact-alt">
-    ...or fill out the inquiry form below.
-</p>
-
-<form
-  action="https://formspree.io/f/mykrpvzj"
-  method="POST"
-  class="contact-form"
->
-
-    <input type="text" name="name" placeholder="Your name" required>
-
-    <input type="email" name="email" placeholder="Your email" required>
-
-    <input type="text" name="event" placeholder="Event / band name">
-
-    <input type="text" name="location" placeholder="Venue / city">
-
-    <input type="text" name="date" placeholder="Event date">
-
-    <textarea name="message" placeholder="Details (setup, vibe, anything important)" rows="5"></textarea>
-
-    <button type="submit">SEND INQUIRY</button>
-
-  </form>
+  <p class="contact-email">
+    <a href="mailto:digitalawareness4u@gmail.com">
+      digitalawareness4u at gmail.com
+    </a>
+  </p>
 
   <p class="contact-alt">
-    or email: <a href="mailto:digitalawareness4u@gmail.com">digitalawareness4u@gmail.com</a>
+    ...or fill out the inquiry form below.
   </p>
+
+  <form
+    action="https://formspree.io/f/mykrpvzj"
+    method="POST"
+    class="contact-form"
+  >
+
+    <!-- Formspree settings -->
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Digital Awareness Inquiry">
+
+    <input
+      type="hidden"
+      name="_next"
+      value="https://digitalawareness4u.com/contact.html?submitted=true">
+
+    <!-- Contact information -->
+    <input
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required>
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your email"
+      required>
+
+    <!-- Event details -->
+    <input
+      type="text"
+      name="event"
+      placeholder="Event / band name">
+
+    <input
+      type="text"
+      name="location"
+      placeholder="Venue / city">
+
+    <input
+      type="text"
+      name="date"
+      placeholder="Event date">
+
+    <textarea
+      name="message"
+      rows="6"
+      placeholder="Tell us about your event, setup, vision, venue, or anything else we should know."
+      required></textarea>
+
+    <button type="submit">
+      SEND INQUIRY
+    </button>
+
+  </form>
 
 </section>
 
