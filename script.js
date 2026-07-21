@@ -1,3 +1,7 @@
 const logoTrack = document.getElementById("logoTrack");
 
-logoTrack.innerHTML += logoTrack.innerHTML;
+if (logoTrack) {
+
+    logoTrack.innerHTML += logoTrack.innerHTML;
+
+}
