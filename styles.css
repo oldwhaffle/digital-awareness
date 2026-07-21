@@ -83,6 +83,10 @@ color:#00ffe1;
 text-shadow:0 0 8px #00ffe1;
 }
 
+.intro h1{
+    transition:opacity .3s ease;
+}
+
 /* CTA */
 .cta{
 display:inline-block;
