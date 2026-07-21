@@ -235,85 +235,185 @@ background:#00ffe1;
 color:#000;
 }
 
-/* LOGOS */
+/* ===========================
+   WHO WE WORK WITH
+=========================== */
+
 .logos{
-    margin-top:100px;
+    margin:100px auto;
     text-align:center;
+    width:100%;
 }
 
 .logos h2{
-    font-family:'Anton', sans-serif;
-    font-size:40px;
+    font-family:'Anton',sans-serif;
+    font-size:42px;
+    letter-spacing:2px;
     color:#00ffe1;
-    margin-bottom:25px;
+    margin-bottom:40px;
 }
 
 .logo-row{
-    overflow:hidden;
     width:100%;
+    overflow:hidden;
+    position:relative;
+    padding:50px 0 25px;
 }
 
 .logo-track{
     display:flex;
     align-items:center;
-    gap:50px;
+    gap:60px;
     width:max-content;
-    animation:scroll 55s linear infinite;
+    animation:scroll 70s linear infinite;
+}
+
+.logo-track:hover{
+    animation-play-state:paused;
 }
 
 .logo-item{
+
     position:relative;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     flex:0 0 auto;
-    padding:20px;
+
     text-decoration:none;
+
+    color:white;
+
+    padding:12px;
+
+    transition:transform .25s ease;
+
+}
+
+.logo-item:hover{
+
+    transform:translateY(-6px);
+
 }
 
 .logo-item img{
-    height:70px;
-    max-width:180px;
-    object-fit:contain;
+
     display:block;
-    transition:.25s;
+
+    height:72px;
+
+    max-width:170px;
+
+    object-fit:contain;
+
+    opacity:.75;
+
+    filter:grayscale(100%);
+
+    transition:
+        opacity .25s ease,
+        filter .25s ease,
+        transform .25s ease;
+
 }
 
 .logo-item:hover img{
+
+    opacity:1;
+
+    filter:none;
+
     transform:scale(1.08);
+
 }
 
+/* Hover Label */
+
 .logo-name{
+
     position:absolute;
-    bottom:100%;
+
+    bottom:calc(100% + 14px);
+
     left:50%;
+
     transform:translateX(-50%);
-    background:#111;
+
+    background:#090909;
+
     color:white;
-    padding:8px 12px;
+
     border:1px solid #00ffe1;
+
     border-radius:6px;
+
+    padding:8px 12px;
+
     font-size:12px;
 
-    opacity:0;
-    pointer-events:none;
-    transition:.2s;
+    font-family:'Space Grotesk',sans-serif;
 
     white-space:nowrap;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.2s;
+
+    z-index:100;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.6);
+
 }
 
 .logo-item:hover .logo-name{
+
     opacity:1;
+
     transform:translate(-50%,-6px);
+
+}
+
+/* tiny arrow */
+
+.logo-name::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:100%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-left:7px solid transparent;
+
+    border-right:7px solid transparent;
+
+    border-top:7px solid #00ffe1;
+
 }
 
 @keyframes scroll{
+
     from{
+
         transform:translateX(0);
+
     }
+
     to{
+
         transform:translateX(-50%);
+
     }
+
 }
 
 /* TESTIMONIALS */
