@@ -255,9 +255,10 @@ color:#000;
 
 .logo-row{
     width:100%;
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:visible;
     position:relative;
-    padding:50px 0 25px;
+    padding:60px 0 30px;
 }
 
 .logo-track{
