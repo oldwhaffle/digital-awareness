@@ -1298,3 +1298,12 @@ opacity:.6;
     line-height:1.5;
     opacity:.9;
 }
+
+.footer-cta a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-cta a:hover{
+    color:#00ffe1;
+}
